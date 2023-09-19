@@ -7,3 +7,7 @@ nav {
     font-style: bold, underline;
     color: lightslategray;
 }
+
+body {
+    background-color: bisque;
+}
