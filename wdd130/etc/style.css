@@ -1,0 +1,9 @@
+html {
+    background-color: rgb(48, 13, 246);
+}
+
+nav {
+    font-size: small;
+    font-style: bold, underline;
+    color: lightslategray;
+}
