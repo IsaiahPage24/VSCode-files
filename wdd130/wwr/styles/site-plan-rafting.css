@@ -31,10 +31,12 @@ Fonts are separated by a & */
 /*  Look around below...but DON'T CHANGE ANYTHING! */
 
 body {
+  background-color: #035B43;
   max-width: 960px;
   margin: 0 auto;
-  padding: 4em;
-  font-size: 18px;
+  padding: 0;
+  font-family: "Shadows Into Light", Helvetica, sans-serif;
+  font-size: 22px;
   text-align: center;
 }
 img {
@@ -48,6 +50,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 h2 {
   text-align: center;
+  margin: 0;
 }
 hr {
   height: 3px;
@@ -108,7 +111,7 @@ nav  {
   display: flex;
 }
 nav a {
-  padding:1em;
+  padding:35px;
   min-width: 120px;
   text-decoration: none;
   padding: 10px;
@@ -162,4 +165,51 @@ nav a:hover {
   grid-area: right;
   border-top: 1px solid;
   border-right: 1px solid;
+}
+
+.home-title {
+  font-family: "Caveat", sans-serif;
+  font-size: 2em;
+  margin-top: 10px;
+}
+
+.msg {
+  background-color: #6f7364;
+  line-height: 1.5em;
+  padding: 35px;
+}
+
+.book, .join {
+  padding: 15px 30px;
+  margin-top: 50px;
+  border-radius: 5px;
+}
+
+.icon {
+  padding-top: 10px;
+}
+
+.msg p {
+  padding-bottom: 15px;
+}
+
+footer {
+  padding: 25px 50px;
+  margin-top: 200px;
+}
+
+footer .social img {
+  padding-top: 15px;
+}
+
+.rivers-card, .camping-card, .rapids-card {
+  margin: 200px 0;
+}
+
+.card-image {
+  border: 10px solid black;
+}
+
+main section img {
+  box-sizing: border-box;
 }
