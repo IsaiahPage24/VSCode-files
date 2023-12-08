@@ -21,7 +21,7 @@ nav a {
 nav {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 20px;
+    margin-top: 5px;
     background-color: #e8dab2;
     color: #001514;
 }
@@ -31,6 +31,7 @@ nav {
     padding-top: 10px;
     justify-self: center;
     align-self: center;
+    background-color: #e8dab2;
 }
 
 nav a:hover {
@@ -116,4 +117,135 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.title {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.title h1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.title p {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: left;
+}
+
+.headline-project {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.before-title {
+    grid-area: 5/1/6/2;
+    z-index: 1;
+    color: #e8dab2;
+    text-align: left;
+}
+
+.after-title {
+    grid-area: 5/7/6/8;
+    z-index: 1;
+    color: #e8dab2;
+    text-align: right;
+}
+
+#before-project {
+    grid-area: 1/1/6/4;
+}
+
+#before-img {
+    width: 100%;
+}
+
+#after-project {
+    grid-area: 1/5/6/8;
+}
+
+#after-img {
+    width: 100%;
+}
+
+.project-description {
+    grid-area: 1/4/11/5;
+    text-align: center;
+}
+
+.assorted-projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(8,100px);
+    
+}
+
+.assorted-projects h1 {
+    grid-area: 1/1/2/4;
+}
+
+#project1 {
+    grid-area: 1/4/3/7;
+}
+
+.project1-img {
+    width: 100%;
+    height: 100%;
+}
+
+#project2 {
+    grid-area: 1/7/5/9;
+}
+
+.project2-img {
+    width: 100%;
+    height: 100%;
+}
+
+
+#project3 {
+    grid-area: 2/1/5/3;
+}
+
+.project3-img {
+    width: 100%;
+    height: 100%;
+}
+
+#project4 {
+    grid-area: 3/3/7/7;
+}
+
+.project4-img {
+    width: 100%;
+    height: 100%;
+}
+
+#project5 {
+    grid-area: 5/7/7/9;
+}
+
+.project5-img {
+    width: 100%;
+    height: 100%;
+}
+
+#project6 {
+    grid-area: 5/1/7/3;
+}
+
+.project6-img {
+    width: 100%;
+    height: 100%;
+}
+
+.project-experience {
+    grid-area: 7/2/9/8;
+    text-align: center;
+    background-color: #e2e8dd;
+    color: #001514;
 }
