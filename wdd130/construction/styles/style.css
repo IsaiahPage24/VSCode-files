@@ -5,6 +5,11 @@
     --paragraph-font: Noto+Sans, Nanum+Myeongjo, sans-serif;
 }
 
+.content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
 header {
     display: grid;
     grid-template-columns: 150px auto;
@@ -21,13 +26,13 @@ nav a {
 nav {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 5px;
+    align-items: center;
     background-color: #e8dab2;
     color: #001514;
 }
 
 .logo {
-    width: 100%;
+    width: 100%;    
     padding-top: 10px;
     justify-self: center;
     align-self: center;
@@ -63,6 +68,20 @@ nav a:hover {
     background-color: #e2e8dd;
     color: #001514;
     padding: 10px;
+}
+
+.book {
+    text-decoration: none;
+    background-color: #f4f6f3;
+    color: #001514;
+    padding: 5px;
+}
+
+.book:hover {
+    text-decoration: none;
+    background-color: #7a7d7d;
+    color: #c40405;
+    padding: 5px;
 }
 
 .restoration-services {
@@ -117,12 +136,20 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    color: #001514;
+    text-decoration: none;
+}
+
+.link-footer a {
+    text-decoration: none;
+    color: #001514;
 }
 
 .title {
     display: grid;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 1fr;
+    margin-top: 50px;
 }
 
 .title h1 {
@@ -133,7 +160,12 @@ footer {
 .title p {
     grid-column: 2/3;
     grid-row: 2/3;
+    display: flex;
     text-align: left;
+}
+
+.title p:nth-child(2) {
+    margin-top: -25px;
 }
 
 .headline-project {
@@ -145,15 +177,28 @@ footer {
 .before-title {
     grid-area: 5/1/6/2;
     z-index: 1;
-    color: #e8dab2;
-    text-align: left;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 5px;
+    align-items: center;
+    text-align: right;
+    color: #c40405;
+    background-color: #e8dab2;
 }
 
 .after-title {
     grid-area: 5/7/6/8;
     z-index: 1;
-    color: #e8dab2;
-    text-align: right;
+    display: flex;
+    justify-content: center;
+    flex: auto;
+    width: 100%;
+    padding: 5px;
+    align-items: center;
+    text-align: center;
+    color: #c40405;
+    background-color: #e8dab2;
 }
 
 #before-project {
@@ -245,7 +290,78 @@ footer {
 
 .project-experience {
     grid-area: 7/2/9/8;
+    display: flex;
+    align-items: center;
     text-align: center;
     background-color: #e2e8dd;
     color: #001514;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.about-us {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 500px 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1rf;
+    margin-top: 50px;
+    column-gap: 50px;
+    row-gap: 50px;
+}
+
+.about-us h1 {
+    grid-area: 1/1/2/3;
+}
+
+.headshot1 {
+    width: 100%;
+    grid-area: 2/2/4/4;
+}
+
+.headshot2 {
+    width: 100%;
+    grid-area: 5/2/7/4;
+}
+
+.bio-text1 {
+    grid-area: 2/4/4/5;
+}
+
+.bio-text2 {
+    grid-area: 5/4/7/5;
+}
+
+.information {
+    display: grid;
+    grid-template: 1fr 1fr / 2fr 3fr;
+    margin-top: 50px;
+}
+
+.map {
+    width: 100%;
+    grid-area: 1/1/3/2;
+}
+
+.location {
+    grid-area: 1/2/2/3;
+    background-color: #c40405;
+    color: #001514;
+}
+
+.location a {
+    text-decoration: none;
+    background-color: #e8dab2;
+    color: #001514;
+    padding: 1px;
+}
+
+.location a:hover {
+    text-decoration: none;
+    background-color: #7a7d7d;
+    color: #c40405;
+    padding: 5px;
+}
+
+.contact-info {
+    grid-area: 2/2/3/3;
+    background-color: #7a7d7d;
 }
