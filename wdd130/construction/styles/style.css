@@ -220,6 +220,7 @@ footer {
 .project-description {
     grid-area: 1/4/11/5;
     text-align: center;
+    padding: 10px;
 }
 
 .assorted-projects {
