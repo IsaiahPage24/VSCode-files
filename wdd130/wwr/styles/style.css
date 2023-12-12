@@ -303,7 +303,38 @@ footer {
   to {opacity: 1}
 }
 
+.FAQ-grid {
+    display: grid;
+    grid-template-columns: 50px 1fr 2fr 50px;
+    grid-template-rows: 1fr 1fr 25px 1fr 1fr 25px 1fr 1fr;
+}
 
+.question1 {
+    grid-area: 1/2/2/3;
+}
+
+.answer1 {
+    grid-area: 1/2/3/4;
+    margin-top: 100px;
+}
+
+.question2 {
+    grid-area: 4/2/5/3;
+}
+
+.answer2 {
+    grid-area: 4/2/6/4;
+    margin-top: 100px;
+}
+
+.question3 {
+    grid-area: 7/2/8/3;
+}
+
+.answer3 {
+    grid-area: 7/2/9/4;
+    margin-top: 100px;
+}
 
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
